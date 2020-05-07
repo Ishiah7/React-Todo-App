@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(252, 250, 249);
+}
+
+.todoPage {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputForm {
+  margin-top: 10vh;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: 5px;
+  width: 30vw;
+}
+
+.input:focus {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.todoList {
+  margin-top: 2vh;
+}
+
+.submitButton {
+  border: none;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+  outline: none;
+  padding: 5px;
+  width: 10vw;
+  background-color: rgba(255, 255, 255, 0.575);
+  color: red;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.input:focus ~ .submitButton {
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.todoTitle {
+  margin-top: 10vh;
+}
+
+.todoName {
+  font-size: 1.3rem;
+}
+
+.todo {
+  height: 3vh;
+  width: 30vw;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.deleteButton {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(245, 10, 10);
+  border: 1px solid red;
+  height: 3vh;
+  outline: none;
+}
+
+.deleteButton:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
